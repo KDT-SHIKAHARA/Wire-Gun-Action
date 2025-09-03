@@ -27,7 +27,9 @@ void RendererSystem::Add(std::shared_ptr<Drawable> a_drawLayer){
 void RendererSystem::Update() {
 	for (auto& layer : m_drawLayers) {
 		for (auto& draw : layer) {
-			draw.lock()->Render();
+			auto sptr = draw.lock();
+			if (!sptr->m_alive) continue;
+			sptr->Render();
 		}
 	}
 }

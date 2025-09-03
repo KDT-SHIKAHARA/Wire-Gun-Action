@@ -6,7 +6,7 @@
 #include"singleton.h"
 #include"Resource.h"
 
-class ResGraphicManager : Singleton<ResGraphicManager> {
+class ResGraphicManager : public Singleton<ResGraphicManager> {
 	friend class Singleton<ResGraphicManager>;
 	ResGraphicManager() = default;
 	virtual ~ResGraphicManager() = default;

@@ -86,6 +86,21 @@
     <Filter Include="project\Game\Components\入力">
       <UniqueIdentifier>{dc1537bb-17fd-4697-9d52-cdebbdf67799}</UniqueIdentifier>
     </Filter>
+    <Filter Include="project\Scene\Title">
+      <UniqueIdentifier>{51002e06-b634-48f6-8320-4b4d36c6bf5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\UI">
+      <UniqueIdentifier>{c0866cd7-97d7-4ad7-baba-b25435c995dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\UI\Graphics">
+      <UniqueIdentifier>{6b82351e-a8d9-463c-b5ca-de2afee11dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Res">
+      <UniqueIdentifier>{459252d1-29b6-4d1f-ab4e-44b28010946a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Res\TexturePath">
+      <UniqueIdentifier>{36c3eaea-7ccb-42df-b72f-27caebc09422}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -123,6 +138,9 @@
     </ClCompile>
     <ClCompile Include="program\PhysicsSystem.cpp">
       <Filter>project\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Title.cpp">
+      <Filter>project\Scene\Title</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +224,15 @@
     </ClInclude>
     <ClInclude Include="program\PhysicsSystem.h">
       <Filter>project\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Title.h">
+      <Filter>project\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Image.h">
+      <Filter>project\Core\UI\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ResTitle.h">
+      <Filter>project\Game\Res\TexturePath</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

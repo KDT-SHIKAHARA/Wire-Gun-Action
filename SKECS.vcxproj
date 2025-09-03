@@ -30,6 +30,7 @@
     <ClCompile Include="program\PhysicsSystem.cpp" />
     <ClCompile Include="program\RendererSystem.cpp" />
     <ClCompile Include="program\SceneManager.cpp" />
+    <ClCompile Include="program\Title.cpp" />
     <ClCompile Include="program\transform.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -44,6 +45,7 @@
     <ClInclude Include="program\GameManager.h" />
     <ClInclude Include="program\GameObject.h" />
     <ClInclude Include="program\GameObjectManager.h" />
+    <ClInclude Include="program\Image.h" />
     <ClInclude Include="program\InputComponent.h" />
     <ClInclude Include="program\InputManager.h" />
     <ClInclude Include="program\Physics.h" />
@@ -52,12 +54,14 @@
     <ClInclude Include="program\ResGraphicManager.h" />
     <ClInclude Include="program\Resource.h" />
     <ClInclude Include="program\ResSoundManager.h" />
+    <ClInclude Include="program\ResTitle.h" />
     <ClInclude Include="program\Scene.h" />
     <ClInclude Include="program\SceneManager.h" />
     <ClInclude Include="program\SceneType.h" />
     <ClInclude Include="program\System.h" />
     <ClInclude Include="program\SystemManager.h" />
     <ClInclude Include="program\SystemType.h" />
+    <ClInclude Include="program\Title.h" />
     <ClInclude Include="program\transform.h" />
     <ClInclude Include="program\WindowData.h" />
   </ItemGroup>

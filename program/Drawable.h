@@ -9,7 +9,7 @@ public:
 	Flag m_isDestory;
 	Flag m_alive;
 public:
-	Drawable(int a_layer = 0, Flag a_isDestory = false, Flag a_alive = true);
+	Drawable(int a_layer = 0, Flag a_alive = true, Flag a_isDestory = false);
 	virtual ~Drawable() = default;
 	int GetLayer()const { return m_layer; }
 	virtual void Render() = 0;

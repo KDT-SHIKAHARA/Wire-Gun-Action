@@ -6,6 +6,8 @@
 #include "Time.h"
 #include "SceneManager.h"
 #include "InputManager.h"
+#include "GameObjectManager.h"
+#include "RendererSystem.h"
 
 void GameManager::loadResources()
 {
@@ -26,6 +28,12 @@ void GameManager::Initialize()
 	loadResources();
 }
 
+//	時間
+//	入力
+//	GameObject(コンポーネント)
+//	画面
+//	システム管理
+//	描画
 void GameManager::Run()
 {
 	while (!ProcessMessage()) {
@@ -35,8 +43,12 @@ void GameManager::Run()
 		m_fps.Update();
 		TimeManager::Instance().Update();
 		InputManager::Instance().Update();
+		GameObjectManager::Instance().Update();
 		SceneManager::Instance().Update();
-		SceneManager::Instance().Render();
+		SystemManager::Instance().Update();
+		RendererSystem::Instance().Update();
+
+		//SceneManager::Instance().Render();
 
 		m_fps.Wait();
 #ifdef _DEBUG

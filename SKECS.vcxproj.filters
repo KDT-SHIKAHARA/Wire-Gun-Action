@@ -121,7 +121,9 @@
     <ClCompile Include="program\InputComponent.cpp">
       <Filter>project\Game\Components\入力</Filter>
     </ClCompile>
-    <ClCompile Include="program\PhysicsSystem.cpp" />
+    <ClCompile Include="program\PhysicsSystem.cpp">
+      <Filter>project\Core\Physics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">

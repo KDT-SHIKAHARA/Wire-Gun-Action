@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="project">
+      <UniqueIdentifier>{c0051f34-c1e7-4958-af0c-d4377588546d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core">
+      <UniqueIdentifier>{a20ad983-3497-4c04-bbac-7255c3d12506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\GameManager">
+      <UniqueIdentifier>{b3ce2b15-ff67-4a7c-bf0d-b3af70fcb841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\var">
+      <UniqueIdentifier>{9b6ad8e6-c195-4dea-9a9c-47b59cb6a81e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Scene">
+      <UniqueIdentifier>{4ee4f44b-1029-4dda-b47c-7df2c00d847a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\System">
+      <UniqueIdentifier>{5925702d-f6a3-4884-a319-48ead44aabc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Scene">
+      <UniqueIdentifier>{743423b9-50cf-4a0c-bbb2-8612e97eebd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Entity">
+      <UniqueIdentifier>{10136370-3024-4b87-971e-6db8461392c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Component">
+      <UniqueIdentifier>{fe92cc08-3bbc-460c-9448-75b30fdbdc14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Renderer">
+      <UniqueIdentifier>{6d738dfa-97bb-43c8-a23e-f11af127ba93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Renderer\DrawBase">
+      <UniqueIdentifier>{4afe0598-987e-43a1-8193-c8aee5b8d0d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Renderer\RendererSystem">
+      <UniqueIdentifier>{04c5fbd8-03b4-4183-b8fc-e9ab833556dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Resource">
+      <UniqueIdentifier>{2f06bee8-5793-4105-a6c1-fcf482d30ca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Resource\Sound">
+      <UniqueIdentifier>{cdfe73a2-0d94-49d0-92d4-dc0ec06d43ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Resource\graphic">
+      <UniqueIdentifier>{2cbafbe5-6cdb-46c5-aed9-7aa6ba4fb5d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Input">
+      <UniqueIdentifier>{7f14d8b6-a974-43b2-ab3f-bd42fdc7222f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Collider">
+      <UniqueIdentifier>{7932c59c-272c-4ba4-9b81-1b6c27695729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Function">
+      <UniqueIdentifier>{9e17812e-1bd1-408c-a059-78febf95e3d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Function\Hit">
+      <UniqueIdentifier>{a31aa8fc-a398-418e-9f1c-1ce263443f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Transform">
+      <UniqueIdentifier>{8bf431f4-fad8-4278-bc02-071628d69241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Physics">
+      <UniqueIdentifier>{cf852292-c302-4db7-aa89-5a3ad4febb91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game">
+      <UniqueIdentifier>{8dc3390b-3fd3-45f9-b5b0-23b623fcb604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Entities">
+      <UniqueIdentifier>{c73f1d90-0a91-4117-b613-da9d49262e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Components">
+      <UniqueIdentifier>{ecc5f007-52c3-4a70-b045-9a395fd1d4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Systems">
+      <UniqueIdentifier>{29f3f621-6a25-4ea8-a9fe-45fe2f848c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Data">
+      <UniqueIdentifier>{c8e3e005-831d-4883-be0f-74eec2e7ffa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Components\入力">
+      <UniqueIdentifier>{dc1537bb-17fd-4697-9d52-cdebbdf67799}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="program\GameManager.cpp">
+      <Filter>project\Core\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="program\main.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="program\SceneManager.cpp">
+      <Filter>project\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Drawable.cpp">
+      <Filter>project\Core\Renderer\DrawBase</Filter>
+    </ClCompile>
+    <ClCompile Include="program\RendererSystem.cpp">
+      <Filter>project\Core\Renderer\RendererSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="program\GameObject.cpp">
+      <Filter>project\Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="program\InputManager.cpp">
+      <Filter>project\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="program\ColliderSystem.cpp">
+      <Filter>project\Core\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="program\transform.cpp">
+      <Filter>project\Core\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Physics.cpp">
+      <Filter>project\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="program\InputComponent.cpp">
+      <Filter>project\Game\Components\入力</Filter>
+    </ClCompile>
+    <ClCompile Include="program\PhysicsSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="program\GameManager.h">
+      <Filter>project\Core\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="program\WindowData.h">
+      <Filter>project\Core\var</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Scene.h">
+      <Filter>project\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SceneManager.h">
+      <Filter>project\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SceneType.h">
+      <Filter>project\Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DefaultScene.h">
+      <Filter>project\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="program\GameObject.h">
+      <Filter>project\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Drawable.h">
+      <Filter>project\Core\Renderer\DrawBase</Filter>
+    </ClInclude>
+    <ClInclude Include="program\RendererSystem.h">
+      <Filter>project\Core\Renderer\RendererSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Component.h">
+      <Filter>project\Core\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ResSoundManager.h">
+      <Filter>project\Core\Resource\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Resource.h">
+      <Filter>project\Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ResGraphicManager.h">
+      <Filter>project\Core\Resource\graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ActionMap.h">
+      <Filter>project\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="program\InputManager.h">
+      <Filter>project\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Collider.h">
+      <Filter>project\Core\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ColliderSystem.h">
+      <Filter>project\Core\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SystemManager.h">
+      <Filter>project\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="program\SystemType.h">
+      <Filter>project\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="program\System.h">
+      <Filter>project\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="program\CollisionRule.h">
+      <Filter>project\Core\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="program\GameObjectManager.h">
+      <Filter>project\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="program\CheckHit.h">
+      <Filter>project\Core\Function\Hit</Filter>
+    </ClInclude>
+    <ClInclude Include="program\transform.h">
+      <Filter>project\Core\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Physics.h">
+      <Filter>project\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="program\InputComponent.h">
+      <Filter>project\Game\Components\入力</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PhysicsSystem.h">
+      <Filter>project\Core\Physics</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

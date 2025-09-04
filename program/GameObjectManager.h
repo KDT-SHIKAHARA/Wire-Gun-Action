@@ -12,6 +12,10 @@ class GameObjectManager : public Singleton<GameObjectManager> {
 	using GameObjects = std::vector<std::shared_ptr<GameObject>>;
 
 public:
+	//	追加
+	void AddGameObject(std::shared_ptr<GameObject> a_gameObject) {
+		m_gameObjects.push_back(a_gameObject);
+	}
 
 	//	全ての更新処理を呼び出す
 	void Update() {

@@ -1,6 +1,10 @@
 #include "SceneManager.h"
 #include "Scene.h"
 #include "DefaultScene.h"
+#include "Title.h"
+#include "MainMenu.h"
+#include "RendererSystem.h"
+#include "DebugScene.h"
 
 #include <cassert>
 #include <vector>
@@ -8,7 +12,9 @@
 SceneManager::SceneManager() {
 	//	¶¬ƒƒ\ƒbƒh‚ğScene‚Ì”‚¾‚¯’Ç‰Á‚·‚é
 	m_sceneFactoty[SceneType::Default] = []() {return std::make_unique<DefaultScene>(); };
-	CreateScene(SceneType::Default);
+	m_sceneFactoty[SceneType::Title] = []() {return std::make_unique<TitleScene>(); };
+	m_sceneFactoty[SceneType::MainMenu] = []() {return std::make_unique<MainMenu>(); };
+	m_sceneFactoty[SceneType::DebugScene] = []() {return std::make_unique<DebugScene>(); };
 }
 
 /// <summary>
@@ -42,7 +48,10 @@ void SceneManager::Render()
 void SceneManager::CreateScene(SceneType a_type){
 	auto ite = m_sceneFactoty.find(a_type);
 	if (ite != m_sceneFactoty.end())
+	{
+		RendererSystem::Instance().AllDelete();
 		m_scene = ite->second();
+	}
 }
 
 /// <summary>

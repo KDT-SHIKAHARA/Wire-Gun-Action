@@ -11,6 +11,7 @@ public:
 public:
 	Drawable(int a_layer = 0, Flag a_alive = true, Flag a_isDestory = false);
 	virtual ~Drawable() = default;
+	void Init();
 	int GetLayer()const { return m_layer; }
 	virtual void Render() = 0;
 };

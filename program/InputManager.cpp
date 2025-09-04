@@ -3,7 +3,7 @@
 
 InputManager::InputManager() {
 	m_action[Action::Select][Device::Pad] = {PAD_INPUT_1};
-	m_action[Action::Select][Device::Keyboard] = { KEY_INPUT_0 };
+	m_action[Action::Select][Device::Keyboard] = { KEY_INPUT_RETURN};
 }
 
 void InputManager::Update()

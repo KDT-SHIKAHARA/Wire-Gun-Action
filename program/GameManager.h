@@ -15,6 +15,5 @@ public:
 
 private:
 	CRemFPS m_fps;
-	WindowData m_window;
 };
 

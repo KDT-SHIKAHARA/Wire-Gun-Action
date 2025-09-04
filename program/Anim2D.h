@@ -3,8 +3,7 @@
 #include<vector>
 #include<string>
 
-
-#include"TextureResource.h"
+#include"Resource.h"
 #include"flag.h"
 
 /// <summary>
@@ -50,7 +49,7 @@ public:
 	void Update();
 	void Render(float x,float y);
 private:
-	std::vector< std::shared_ptr<TextureResource>> frames_;	//	描画する画像リスト
+	std::vector< std::shared_ptr<Resource>> frames_;	//	描画する画像リスト
 
 	//	再生制御
 	double elapsed_ms_ = 0;				//	現在のフレームの経過時間

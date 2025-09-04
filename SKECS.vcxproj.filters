@@ -101,6 +101,36 @@
     <Filter Include="project\Game\Res\TexturePath">
       <UniqueIdentifier>{36c3eaea-7ccb-42df-b72f-27caebc09422}</UniqueIdentifier>
     </Filter>
+    <Filter Include="project\Game\Effect">
+      <UniqueIdentifier>{6271389b-857a-4e67-9693-838b6ac257a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Scene\MainMenu">
+      <UniqueIdentifier>{13174113-1b5f-4866-9ca8-60c94143b7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Scene\InGame">
+      <UniqueIdentifier>{870cb518-68d4-41fc-8fe6-6950ff7201e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Scene\Debug">
+      <UniqueIdentifier>{fe5593c7-7953-4cc0-af2b-598fa7b4641d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Entities\Factory">
+      <UniqueIdentifier>{e3a0565a-02d0-4242-97c9-e761003bab87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\animation2D">
+      <UniqueIdentifier>{1ed8fcc0-ce84-4b04-a178-791a7efa8958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Core\Camera">
+      <UniqueIdentifier>{71589b89-8497-4e87-9a79-a92340f6567f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Entities\Player">
+      <UniqueIdentifier>{3c9eb4d1-12ee-404d-8ccf-99f910ec2730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Entities\Player\State">
+      <UniqueIdentifier>{6fb0b1c4-edff-4ecb-98a5-8355ba47f7a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\Game\Entities\Player\Render">
+      <UniqueIdentifier>{4daa2a8a-b941-4a36-a90e-d95e7d48bcc7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -141,6 +171,30 @@
     </ClCompile>
     <ClCompile Include="program\Title.cpp">
       <Filter>project\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="program\ParticleEffect.cpp">
+      <Filter>project\Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="program\InGame.cpp">
+      <Filter>project\Scene\InGame</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MainMenu.cpp">
+      <Filter>project\Scene\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Anim2D.cpp">
+      <Filter>project\Core\animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="program\Camera.cpp">
+      <Filter>project\Core\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="program\DebugScene.cpp">
+      <Filter>project\Scene\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="program\EntityFactory.cpp">
+      <Filter>project\Game\Entities\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="program\PlayerState.cpp">
+      <Filter>project\Game\Entities\Player\State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -233,6 +287,33 @@
     </ClInclude>
     <ClInclude Include="program\ResTitle.h">
       <Filter>project\Game\Res\TexturePath</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ParticleEffect.h">
+      <Filter>project\Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="program\MainMenu.h">
+      <Filter>project\Scene\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="program\InGame.h">
+      <Filter>project\Scene\InGame</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DebugScene.h">
+      <Filter>project\Scene\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="program\EntityFactory.h">
+      <Filter>project\Game\Entities\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Anim2D.h">
+      <Filter>project\Core\animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Camera.h">
+      <Filter>project\Core\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PlayerState.h">
+      <Filter>project\Game\Entities\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PlayerRender.h">
+      <Filter>project\Game\Entities\Player\Render</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

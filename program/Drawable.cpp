@@ -4,5 +4,8 @@
 Drawable::Drawable(int a_layer, Flag a_alive,Flag a_isDestory)
 	:m_layer(a_layer), m_isDestory(a_isDestory), m_alive(a_alive)
 {
+}
+
+void Drawable::Init() {
 	RendererSystem::Instance().Add(shared_from_this());
 }

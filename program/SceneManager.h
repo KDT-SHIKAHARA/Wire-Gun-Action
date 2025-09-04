@@ -6,6 +6,8 @@
 #include"singleton.h"
 #include "SceneType.h"
 
+#define _SCENE_CREATE(a_type) SceneManager::Instance().CreateScene(a_type)
+
 class Scene;
 class SceneManager final : public Singleton<SceneManager> {
 	friend class Singleton<SceneManager>;

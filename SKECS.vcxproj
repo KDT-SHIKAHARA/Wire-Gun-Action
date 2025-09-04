@@ -19,15 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="program\Anim2D.cpp" />
+    <ClCompile Include="program\Camera.cpp" />
     <ClCompile Include="program\ColliderSystem.cpp" />
+    <ClCompile Include="program\DebugScene.cpp" />
     <ClCompile Include="program\Drawable.cpp" />
+    <ClCompile Include="program\EntityFactory.cpp" />
     <ClCompile Include="program\GameManager.cpp" />
     <ClCompile Include="program\GameObject.cpp" />
+    <ClCompile Include="program\InGame.cpp" />
     <ClCompile Include="program\InputComponent.cpp" />
     <ClCompile Include="program\InputManager.cpp" />
     <ClCompile Include="program\main.cpp" />
+    <ClCompile Include="program\MainMenu.cpp" />
+    <ClCompile Include="program\ParticleEffect.cpp" />
     <ClCompile Include="program\Physics.cpp" />
     <ClCompile Include="program\PhysicsSystem.cpp" />
+    <ClCompile Include="program\PlayerState.cpp" />
     <ClCompile Include="program\RendererSystem.cpp" />
     <ClCompile Include="program\SceneManager.cpp" />
     <ClCompile Include="program\Title.cpp" />
@@ -35,21 +43,30 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\ActionMap.h" />
+    <ClInclude Include="program\Anim2D.h" />
+    <ClInclude Include="program\Camera.h" />
     <ClInclude Include="program\CheckHit.h" />
     <ClInclude Include="program\Collider.h" />
     <ClInclude Include="program\ColliderSystem.h" />
     <ClInclude Include="program\CollisionRule.h" />
     <ClInclude Include="program\Component.h" />
+    <ClInclude Include="program\DebugScene.h" />
     <ClInclude Include="program\DefaultScene.h" />
     <ClInclude Include="program\Drawable.h" />
+    <ClInclude Include="program\EntityFactory.h" />
     <ClInclude Include="program\GameManager.h" />
     <ClInclude Include="program\GameObject.h" />
     <ClInclude Include="program\GameObjectManager.h" />
     <ClInclude Include="program\Image.h" />
+    <ClInclude Include="program\InGame.h" />
     <ClInclude Include="program\InputComponent.h" />
     <ClInclude Include="program\InputManager.h" />
+    <ClInclude Include="program\MainMenu.h" />
+    <ClInclude Include="program\ParticleEffect.h" />
     <ClInclude Include="program\Physics.h" />
     <ClInclude Include="program\PhysicsSystem.h" />
+    <ClInclude Include="program\PlayerRender.h" />
+    <ClInclude Include="program\PlayerState.h" />
     <ClInclude Include="program\RendererSystem.h" />
     <ClInclude Include="program\ResGraphicManager.h" />
     <ClInclude Include="program\Resource.h" />

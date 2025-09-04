@@ -1,7 +1,8 @@
 #pragma once
 #include"SystemType.h"
 #include"SystemManager.h"
-
+#include"debugDef.h"
+#include"InputManager.h"
 
 class Scene {
 public:

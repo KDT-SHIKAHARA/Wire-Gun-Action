@@ -16,8 +16,8 @@ void GameManager::loadResources()
 void GameManager::Initialize()
 {
 	SetOutApplicationLogValidFlag(FALSE);
-	ChangeWindowMode(m_window.windowFlag);
-	SetGraphMode(m_window.sceneX, m_window.sceneY, m_window.colorBit);
+	ChangeWindowMode(WindowData::m_windowFlag);
+	SetGraphMode(WindowData::m_sceneW, WindowData::m_sceneH, WindowData::m_colorBit);
 	SetMainWindowText("NoName");
 	SetBackgroundColor(128, 128, 128);
 
@@ -26,6 +26,7 @@ void GameManager::Initialize()
 	SetDrawScreen(DX_SCREEN_BACK);
 
 	loadResources();
+	_SCENE_CREATE(SceneType::DebugScene);
 }
 
 //	ŽžŠÔ
@@ -47,8 +48,7 @@ void GameManager::Run()
 		SceneManager::Instance().Update();
 		SystemManager::Instance().Update();
 		RendererSystem::Instance().Update();
-
-		//SceneManager::Instance().Render();
+		SceneManager::Instance().Render();
 
 		m_fps.Wait();
 #ifdef _DEBUG

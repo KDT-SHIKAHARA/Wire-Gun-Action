@@ -6,7 +6,7 @@
 #include<cassert>
 #include<algorithm>
 
-#include"TextureResourceMng.h"
+#include"ResGraphicManager.h"
 #include"Time.h"
 
 /// <summary>
@@ -44,7 +44,7 @@ void Anim2D::LoadFrames(const std::string& path, int num_frames, float duration,
 {
 	for (int i = 0; i < num_frames; i++) {
 		std::string filepath = path + std::to_string(i) + ".png";
-		auto texture = TextureResourceMgr::Instance().GetTexture(filepath);
+		auto texture = ResGraphicManager::Instance().GetTexture(filepath);
 		assert(texture->GetHandle() != -1);
 		frames_.push_back(texture);
 	}

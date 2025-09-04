@@ -16,7 +16,13 @@ bool RendererSystem::isErase(const std::weak_ptr<Drawable>& a_drawLayer){
 /// </summary>
 /// <param name="a_drawLayer"></param>
 void RendererSystem::Add(std::shared_ptr<Drawable> a_drawLayer){
+	//	追加したいオブジェクトのlayer番号取得
 	const auto& layerNum = a_drawLayer->GetLayer();
+	//	vectirなので存在しないlayer番号目のインスタンスに追加できないよ
+	if (m_drawLayers.size() <= layerNum) {
+		m_drawLayers.resize(layerNum + 1);
+	}
+	//	追加
 	m_drawLayers[layerNum].push_back(a_drawLayer);
 }
 
@@ -45,4 +51,12 @@ void RendererSystem::Delete()
 		Layer.erase(std::remove_if(Layer.begin(), Layer.end(),[](const std::weak_ptr<Drawable>& wptr) 
 			{ return wptr.expired() || wptr.lock()->m_isDestory; }),Layer.end());
 	}
+}
+
+/// <summary>
+/// 全て削除
+/// </summary>
+void RendererSystem::AllDelete()
+{
+	m_drawLayers.clear();
 }

@@ -35,6 +35,7 @@
     <ClCompile Include="program\ParticleEffect.cpp" />
     <ClCompile Include="program\Physics.cpp" />
     <ClCompile Include="program\PhysicsSystem.cpp" />
+    <ClCompile Include="program\PlayerRender.cpp" />
     <ClCompile Include="program\PlayerState.cpp" />
     <ClCompile Include="program\RendererSystem.cpp" />
     <ClCompile Include="program\SceneManager.cpp" />

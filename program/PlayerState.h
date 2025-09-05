@@ -2,6 +2,8 @@
 #include"Component.h"
 
 
+#define _PLAYER_STATE PlayerState::State
+
 class PlayerState : public Component {
 public:
 	enum class State {

@@ -1,7 +1,9 @@
 #include "DebugScene.h"
+#include "EntityFactory.h"
 
 DebugScene::DebugScene()
 {
+	GameObjectFactory::CreatePlayer();
 }
 
 void DebugScene::Update()

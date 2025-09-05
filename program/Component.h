@@ -7,8 +7,8 @@ class Component{
 public:
 	virtual ~Component() = default;
 	virtual void Update() = 0;
-	void SetGameobject(const std::shared_ptr<GameObject>& a_gameObj) { m_gameObj = a_gameObj; }
+	void SetGameObj(const std::shared_ptr<GameObject>& a_gameObj) { m_gameObj = a_gameObj; }
 	std::shared_ptr<GameObject> GetGameObj()const { return m_gameObj.lock(); }
-private:
+protected:
 	std::weak_ptr<GameObject> m_gameObj;
 };

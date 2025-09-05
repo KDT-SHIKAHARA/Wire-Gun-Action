@@ -196,7 +196,9 @@
     <ClCompile Include="program\PlayerState.cpp">
       <Filter>project\Game\Entities\Player\State</Filter>
     </ClCompile>
-    <ClCompile Include="program\PlayerRender.cpp" />
+    <ClCompile Include="program\PlayerRender.cpp">
+      <Filter>project\Game\Entities\Player\Render</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
@@ -316,5 +318,8 @@
     <ClInclude Include="program\PlayerRender.h">
       <Filter>project\Game\Entities\Player\Render</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

@@ -10,9 +10,6 @@ public:
 		Idle,
 		Move,
 		Jump,
-		Attack,
-		Damage,
-		Dead,
 	}; // enum class
 
 	//	各コンポーネントの終了状態を見て待機状態に戻す

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Component">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAwA=</HashCode>
+      <FileName>program\Component.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collider">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAAAAEAAAAAAAAAAAAAEQAAAAAAQAAAA=</HashCode>
+      <FileName>program\Collider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircleCollider">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAIAAAAAAAAAAAgAAAAAAEAAAAAAAgAAAA=</HashCode>
+      <FileName>program\Collider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BoxCollider">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAACAAAAAAAAAACAAAAEAAAAAAAIAAAA=</HashCode>
+      <FileName>program\Collider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ColliderType" Collapsed="true">
+    <Position X="6.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>program\Collider.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Yu Gothic UI" Size="9" />
+</ClassDiagram>

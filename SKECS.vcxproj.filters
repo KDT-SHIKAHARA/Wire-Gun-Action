@@ -131,6 +131,9 @@
     <Filter Include="project\Game\Entities\Player\Render">
       <UniqueIdentifier>{4daa2a8a-b941-4a36-a90e-d95e7d48bcc7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="project\Game\Entities\Player\Input">
+      <UniqueIdentifier>{14b71310-ba92-4444-b7a5-f895f5dde699}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -198,6 +201,9 @@
     </ClCompile>
     <ClCompile Include="program\PlayerRender.cpp">
       <Filter>project\Game\Entities\Player\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="program\PlayerInput.cpp">
+      <Filter>project\Game\Entities\Player\Input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -317,6 +323,9 @@
     </ClInclude>
     <ClInclude Include="program\PlayerRender.h">
       <Filter>project\Game\Entities\Player\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="program\PlayerInput.h">
+      <Filter>project\Game\Entities\Player\Input</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

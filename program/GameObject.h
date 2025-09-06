@@ -53,6 +53,8 @@ inline std::shared_ptr<T> GameObject::AddComponent(Args&&... args) {
 	auto comp = std::make_shared<T>(std::forward<Args>(args)...);
 	//	付与したcomponentのGameObjectを自分にする。
 	comp->SetGameObj(shared_from_this());
+	//	スタートメソッド
+	comp->Start();
 	//	T型と同じキーの型の中身に入れる。(すでにあればリセットされる)
 	m_components[std::type_index(typeid (T))] = comp;
 

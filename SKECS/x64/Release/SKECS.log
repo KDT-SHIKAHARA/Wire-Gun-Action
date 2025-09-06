@@ -1,0 +1,196 @@
+﻿  Anim2D.cpp
+  Camera.cpp
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244: '=': 'T' から 'T' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         with
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:             T=float
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         ]
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         and
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:             T=int
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         ]
+  (ソース ファイル 'program/Camera.cpp' をコンパイルしています)
+      C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20):
+      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
+          C:\Users\com\source\repos\Wire-Gun-Action\program\Camera.cpp(55,84):
+          コンパイル対象の関数 テンプレート インスタンス化 'Vector2D<int> operator /<float>(const Vector2D<float> &,const int &)' のリファレンスを確認してください
+  
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244: '=': 'T' から 'T' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         with
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:             T=float
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         ]
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         and
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:             T=int
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         ]
+  (ソース ファイル 'program/Camera.cpp' をコンパイルしています)
+  
+  ColliderSystem.cpp
+  DebugScene.cpp
+  Drawable.cpp
+  EntityFactory.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(492,85): warning C4244: '引数': '_Ty' から 'float' への変換です。データが失われる可能性があります。
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(492,85): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(492,85): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(492,85): warning C4244:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(492,85): warning C4244:         ]
+  (ソース ファイル 'program/EntityFactory.cpp' をコンパイルしています)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(492,85):
+      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
+          C:\Users\com\source\repos\Wire-Gun-Action\program\EntityFactory.cpp(33,13):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<_Ty> GameObject::AddComponent<Physics,int,bool,bool>(int &&,bool &&,bool &&)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Physics
+          ]
+          C:\Users\com\source\repos\Wire-Gun-Action\program\GameObject.h(53,19):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<_Ty> std::make_shared<Physics,int,bool,bool>(int &&,bool &&,bool &&)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Physics
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2903,46):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::_Ref_count_obj2<Physics>::_Ref_count_obj2<_Ty,bool,bool>(_Ty &&,bool &&,bool &&)' のリファレンスを確認してください
+          with
+          [
+              _Ty=int
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2092,18):
+          コンパイル対象の関数 テンプレート インスタンス化 'void std::_Construct_in_place<_Ty,int,bool,bool>(_Ty &,int &&,bool &&,bool &&) noexcept(false)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Physics
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(502,14):
+          コンパイル対象の関数 テンプレート インスタンス化 '_Ty *std::construct_at<_Ty,int,bool,bool>(_Ty *const ,int &&,bool &&,bool &&) noexcept(<expr>)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Physics
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244: '引数': '_Ty' から 'float' への変換です。データが失われる可能性があります。
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244:         ]
+  (ソース ファイル 'program/EntityFactory.cpp' をコンパイルしています)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(493,90): warning C4244: '引数': '_Ty' から 'float' への変換です。データが失われる可能性があります。
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(493,90): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(493,90): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(493,90): warning C4244:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(493,90): warning C4244:         ]
+  (ソース ファイル 'program/EntityFactory.cpp' をコンパイルしています)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(493,90):
+      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2092,18):
+          コンパイル対象の関数 テンプレート インスタンス化 'void std::_Construct_in_place<_Ty,int,bool,bool>(_Ty &,int &&,bool &&,bool &&) noexcept(false)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Physics
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(502,14):
+          コンパイル対象の関数 テンプレート インスタンス化 '_Ty *std::construct_at<_Ty,int,bool,bool>(_Ty *const ,int &&,bool &&,bool &&) noexcept(false)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Physics
+          ]
+  
+  GameManager.cpp
+  GameObject.cpp
+  InGame.cpp
+  InputComponent.cpp
+  InputManager.cpp
+  main.cpp
+  MainMenu.cpp
+  ParticleEffect.cpp
+C:\Users\com\source\repos\Wire-Gun-Action\program\ParticleEffect.cpp(41,21): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\ParticleEffect.cpp(42,21): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\ParticleEffect.cpp(43,22): warning C4244: '-=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\ParticleEffect.cpp(64,52): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\ParticleEffect.cpp(63,67): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\ParticleEffect.cpp(63,44): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  Physics.cpp
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(39,35): warning C4244: '+=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(51,35): warning C4244: '+=': 'double' から 'T' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(51,35): warning C4244:         with
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(51,35): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(51,35): warning C4244:             T=float
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(51,35): warning C4244:         ]
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(52,36): warning C4244: '+=': 'double' から 'T' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(52,36): warning C4244:         with
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(52,36): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(52,36): warning C4244:             T=float
+C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(52,36): warning C4244:         ]
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244: '=': 'N' から 'T' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244:         with
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244:             N=double
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244:         ]
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244:         and
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244:             T=float
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20): warning C4244:         ]
+  (ソース ファイル 'program/Physics.cpp' をコンパイルしています)
+      C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(162,20):
+      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
+          C:\Users\com\source\repos\Wire-Gun-Action\program\Physics.cpp(77,52):
+          コンパイル対象の関数 テンプレート インスタンス化 'Vector2D<float> operator *<float,double>(const Vector2D<float> &,const N &)' のリファレンスを確認してください
+          with
+          [
+              N=double
+          ]
+  
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244: '=': 'N' から 'T' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244:         with
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244:             N=double
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244:         ]
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244:         and
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244:             T=float
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(163,20): warning C4244:         ]
+  (ソース ファイル 'program/Physics.cpp' をコンパイルしています)
+  
+  PhysicsSystem.cpp
+  PlayerInput.cpp
+  PlayerRender.cpp
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244: '=': 'T' から 'T' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         with
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:             T=float
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         ]
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         and
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:             T=int
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20): warning C4244:         ]
+  (ソース ファイル 'program/PlayerRender.cpp' をコンパイルしています)
+      C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(213,20):
+      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
+          C:\Users\com\source\repos\Wire-Gun-Action\program\PlayerRender.cpp(46,57):
+          コンパイル対象の関数 テンプレート インスタンス化 'Vector2D<int> operator /<float>(const Vector2D<float> &,const int &)' のリファレンスを確認してください
+  
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244: '=': 'T' から 'T' への変換です。データが失われる可能性があります。
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         with
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:             T=float
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         ]
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         and
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         [
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:             T=int
+C:\Users\com\source\repos\Wire-Gun-Action\program\vector2d.h(214,20): warning C4244:         ]
+  (ソース ファイル 'program/PlayerRender.cpp' をコンパイルしています)
+  
+  PlayerState.cpp
+  RendererSystem.cpp
+  コンパイル中...
+  SceneManager.cpp
+  Title.cpp
+  transform.cpp
+  コード生成しています。
+  Previous IPDB not found, fall back to full compilation.
+C:\Users\com\source\repos\Wire-Gun-Action\program\SystemManager.h(42): warning C4715: 'SystemManager::GetSystem<PhysicsSystem>': 値を返さないコントロール パスがあります。
+  All 2577 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  コード生成が終了しました。
+  SKECS.vcxproj -> C:\Users\com\source\repos\Wire-Gun-Action\x64\Release\SKECS.exe

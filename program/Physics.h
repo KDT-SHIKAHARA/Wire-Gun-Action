@@ -11,6 +11,7 @@ public:
 	Physics(float a_maxFallSpeed = 1000.f, Flag a_enable = true, Flag a_isGravity = true);
 	virtual ~Physics();
 
+	void Start()override;
 	void Update()override;
 	void Move();
 
@@ -24,6 +25,13 @@ public:
 		m_friction  = std::clamp(a_friction, 0.0f, 1.0f);
 	}
 
+	//	移動ベクトルの追加
+	void AddVelociry(const Vector2Df& a_velocity) {
+		m_velocity += a_velocity;
+	}
+
+
+	//	移動ベクトルの
 	void SetVelociry(const Vector2Df& a_velocity) {
 		m_velocity = a_velocity;
 	}
@@ -34,7 +42,7 @@ private:
 	Vector2Df m_acceleration;	//	重力、外力
 	float m_gravityVelocity = 0;//	重力で発生している移動ベクトル
 	float m_maxFallSpeed;		//	落下速度上限
-	float m_friction = 0.8f;	//	水平摩擦	0.0 - 1.0
+	float m_friction = 0.0f;	//	水平摩擦	0.0 - 1.0
 	float m_gravity = 980.f;		//	重力加速度(秒速)
 
 	std::weak_ptr<PhysicsSystem> m_system;

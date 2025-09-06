@@ -9,7 +9,6 @@ public:
 	enum class State {
 		Idle,
 		Move,
-		Jump,
 	}; // enum class
 
 	//	各コンポーネントの終了状態を見て待機状態に戻す
@@ -24,8 +23,9 @@ public:
 
 	//	現在の状態が指定した状態と同じかどうか
 	bool CheckState(State a_state) { return m_state == a_state; }
+	State GetState()const { return m_state; }
 
 private:
-	State m_state = State::Idle;
+	State m_state = State::Move;
 
 };	//	class

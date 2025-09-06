@@ -4,6 +4,11 @@
 #include "Collider.h"
 #include "PlayerRender.h"
 #include "vector2d.h"
+#include "PlayerState.h"
+#include "Physics.h"
+#include "InputComponent.h"
+#include "PlayerInput.h"
+
 
 void GameObjectFactory::SetSystem(std::shared_ptr<GameObject> a_gameObject)
 {
@@ -26,9 +31,18 @@ std::shared_ptr<GameObject> GameObjectFactory::CreatePlayer()
     player->m_transform.SetWorldPosition(Vector2Df{ (float)WindowData::m_sceneW / 2, (float)WindowData::m_sceneH / 2 });
 
     //  コンポーネントの追加
+
+    //  判定用
     player->AddComponent<BoxCollider>(size,true,false);
+    //  状態
+    player->AddComponent<PlayerState>();
+    //  物理演算
+    player->AddComponent<Physics>(500.f,true,false);
+    //  アニメーション
     auto render = player->AddComponent<PlayerAnimation>();
     render->Init();
+    //  入力
+    player->AddComponent<InputComponent>();
 
     //  システムに追加
     SetSystem(player);

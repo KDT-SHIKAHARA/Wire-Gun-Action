@@ -10,15 +10,19 @@ Physics::Physics(float a_maxFallSpeed, Flag a_enable, Flag a_isGravity)
 
 	//	システムの弱参照取得
 	m_system = SystemManager::Instance().GetSystem<PhysicsSystem>();
-	//	システムに自分を自動で追加
-	m_system.lock()->Register(shared_from_this());
 }
 
 
 Physics::~Physics()
 {
-	m_system.lock()->UnRegister(shared_from_this());
+	//m_system.lock()->UnRegister(shared_from_this());
 };
+
+void Physics::Start()
+{
+	//	システムに自分を自動で追加
+	m_system.lock()->Register(shared_from_this());
+}
 
 /// <summary>
 /// 重力加速度と外力を移動量に合成する。

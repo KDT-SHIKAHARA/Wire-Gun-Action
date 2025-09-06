@@ -8,19 +8,15 @@
 #include"Resource.h"
 
 class PlayerAnimation : public Component, public Drawable {
-	enum class AnimType {
-		Idle,
-		Run,
-		Jump,
-	};
-
 public:
 	PlayerAnimation();
+	void Start()override;
 	void Update()override;
 	void Render()override;
 
 
 private:
-	std::unordered_map<AnimType, Anim2D> m_anims;
-	AnimType m_now_type = AnimType::Run;
+	std::unordered_map<_PLAYER_STATE, Anim2D> m_anims;
+	std::shared_ptr<PlayerState> m_state;
+	_PLAYER_STATE m_now_state;
 };

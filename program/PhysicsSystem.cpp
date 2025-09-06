@@ -17,7 +17,19 @@ void PhysicsSystem::UnRegister(const std::shared_ptr<Physics>& comp)
 
 void PhysicsSystem::Update()
 {
-	for (auto it : m_physicsComponents) {
+	//	無効なポインタの削除
+	m_physicsComponents.erase(
+		std::remove_if(
+			m_physicsComponents.begin(),
+			m_physicsComponents.end(),
+			[](const std::weak_ptr<Physics>& wp) {
+				return wp.expired();  // 参照が切れているか？
+			}
+		),
+		m_physicsComponents.end()
+	);
+
+	for (auto& it : m_physicsComponents) {
 		auto physics = it.lock();
 		if (!physics) continue;
 		physics->Move();
